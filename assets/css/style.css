@@ -610,9 +610,11 @@ select:focus {
 }
 
 .map-placeholder {
-  height: min(400px, 60vh);              /* define container size */
-  padding: 0;                 /* remove padding so map fits exactly */
+  height: 400px;
+  padding: 0;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .map-placeholder iframe {
