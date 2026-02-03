@@ -29,7 +29,7 @@
 
   <main>
     <section class="hero" style="min-height: 52vh;">
-      <div class="hero-media" style="background-image: linear-gradient(120deg, rgba(14,14,14,0.35), rgba(14,14,14,0.35)), url('assets/wall-paintings.jpeg');"></div>
+      <div class="hero-media" style="background-image: linear-gradient(120deg, rgba(14,14,14,0.35), rgba(14,14,14,0.35)), url('assets/wall-paintings.png');"></div>
       <div class="hero-content reveal">
         <span class="badge">Contact</span>
         <h1>We are ready to host you.</h1>
@@ -42,29 +42,57 @@
         <div class="reveal">
           <div class="section-heading">Visit</div>
           <h2 class="section-title">YBRS – The Art Gallery Café</h2>
-          <p class="section-subtitle">Add your official address and contact details here so guests can find you quickly.</p>
+          <p class="section-subtitle">Plot 3/A, Near Datta Mandir, Adwait, Dhule Locality, Dhule.</p>
           <ul class="list">
-            <li><strong>Address:</strong> Update with street, locality, and city for the café.</li>
-            <li><strong>Hours:</strong> Ideal to list daily timings and last order cut-off.</li>
-            <li><strong>Phone:</strong> Add your primary contact number for quick reservations.</li>
-            <li><strong>Email:</strong> Set your official inbox for franchise or catering inquiries.</li>
+            <li><strong>Address:</strong> Datta Mandir, Deopur, Dhule</li>
+            <li><strong>Hours:</strong> 10 AM to 10 PM</li>
+            <li><strong>Phone:</strong> +91 9623032303</li>
           </ul>
-          <div class="map-placeholder" aria-label="Map placeholder">Embed Google Map here once the official address is set.</div>
+          <div class="map-placeholder" aria-label="Map placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.70429673369!2d74.77463057398803!3d20.92421328069899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdec54a5e4dc519%3A0x3fe90899c5bddd6f!2sYBR&#39;S%20-%20The%20Art%20Gallery%20Cafe!5e0!3m2!1sen!2sin!4v1770126126473!5m2!1sen!2sin"
+              width="500"
+              height="400"
+              style="border:0px; border-radius: 10px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
+
         <div class="form-card reveal">
-          <form>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thank-you.html"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <p hidden>
+              <label>
+                Don’t fill this out:
+                <input name="bot-field" />
+              </label>
+            </p>
+
             <div>
               <label for="name">Name</label>
               <input id="name" name="name" type="text" placeholder="Your name" required />
             </div>
+
             <div>
               <label for="email">Email</label>
               <input id="email" name="email" type="email" placeholder="you@example.com" required />
             </div>
+
             <div>
               <label for="phone">Phone</label>
               <input id="phone" name="phone" type="tel" placeholder="Contact number" />
             </div>
+
             <div>
               <label for="topic">Topic</label>
               <select id="topic" name="topic">
@@ -74,10 +102,12 @@
                 <option>Event booking</option>
               </select>
             </div>
+
             <div>
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="4" placeholder="Tell us what you need"></textarea>
             </div>
+
             <button class="btn btn-primary" type="submit">Send message</button>
           </form>
         </div>
@@ -86,7 +116,9 @@
   </main>
 
   <footer class="footer">
-    <div class="container">Reach YBRS – The Art Gallery Café for visits, catering, or franchise interest.</div>
+    <div class="container">
+      Reach YBRS – The Art Gallery Café for visits, catering, or franchise interest.
+    </div>
   </footer>
 </body>
 </html>

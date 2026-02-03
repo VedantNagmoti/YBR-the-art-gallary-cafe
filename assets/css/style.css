@@ -437,7 +437,7 @@ img {
 
 .gallery-item {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--stroke);
@@ -596,6 +596,10 @@ select {
   background: rgba(255, 255, 255, 0.03);
   color: var(--white);
   font-family: var(--font-body);
+}
+select option {
+  background-color: #fff5f5; /* Light reddish-white */
+  color: #333;               /* Ensure text is dark enough to read */
 }
 
 input:focus,
